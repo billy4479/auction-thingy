@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auction thingy</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body class="bg-slate-600">
+    <div id="app">
+      <h1 class="text-4xl text-white">Auction table creator</h1>
+      <textarea
+        class="shadow p-5 mt-10 bg-white block w-full rounded"
+        name="input"
+        id="input"
+        rows="5"
+        placeholder="Paste here..."
+      ></textarea>
+
+      <div class="shadow p-5 mt-10 rounded bg-white" id="output-container">
+        <div class="flex place-items-center flex-col mt-3">
+          <h2 class="text-2xl font-semibold text-center block"></h2>
+          <table class="border-collapse w-full mt-3">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+          <div class="text-xl font-semibold mt-3" id="total"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>

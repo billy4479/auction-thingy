@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 85%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+td,
+th {
+  @apply border border-black px-2 py-1;
+}
+
+td:nth-child(3),
+td:nth-child(2) {
+  @apply text-left;
+}
